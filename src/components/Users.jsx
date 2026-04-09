@@ -188,7 +188,7 @@ export default function Users() {
 						key={user.id}
 						className="flex gap-4 p-4 border rounded">
 						{/* Vi använder ett enkelt formulär per rad för att undvika lokal state */}
-						<Dogs />
+						<Dogs id={user.id} />
 						<form
 							onSubmit={(e) => {
 								e.preventDefault();
