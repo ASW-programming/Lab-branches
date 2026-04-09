@@ -187,6 +187,10 @@ export default function Users() {
 						key={user.id}
 						className="flex gap-4 p-4 border rounded">
 						{/* Vi använder ett enkelt formulär per rad för att undvika lokal state */}
+						<img
+							src="https://media.licdn.com/dms/image/v2/D4E12AQEud3Ll5MI7cQ/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1660833954461?e=2147483647&v=beta&t=1e_UbOwhBjrbh6dYElFz-hUdQy2gltC1XWh2NxkigvI"
+							style={{ height: "50px", width: "50px" }}
+						/>
 						<form
 							onSubmit={(e) => {
 								e.preventDefault();
