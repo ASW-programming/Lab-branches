@@ -150,7 +150,7 @@ export default function Users() {
 
 	return (
 		<div className="p-8 max-w-2xl mx-auto font-sans">
-			<h1 className="text-3xl font-bold mb-6 text-white-800">
+			<h1 className="text-3xl font-bold mb-6 text-blue-800">
 				User Management (Optimistic UI)
 			</h1>
 			{/* ADD USER SECTION */}
@@ -203,25 +203,25 @@ export default function Users() {
 							<input
 								name="name"
 								defaultValue={user.name}
-								className="border-b"
+								className="border-b text-center"
 							/>
 							<input
 								name="name"
 								defaultValue={user.role}
-								className="border-b"
+								className="border-b text-center"
 							/>
 
 							<button
 								type="submit"
-								className="bg-green-500 text-white px-2">
-								Spara
+								className="bg-green-500 text-black w-8">
+								✅
 							</button>
 						</form>
 
 						<button
 							onClick={() => deleteMutation.mutate(user.id)}
-							className="text-red-500">
-							✕
+							className="text-black-500 bg-red-500 w-8">
+							🦝
 						</button>
 					</div>
 				))}
