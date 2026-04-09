@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import Dogs from "./Dogs";
 
 const API_BASE = "https://api-userapi.onrender.com/api/users";
 const API_KEY = "elev-hemlighet-2026";
@@ -187,6 +188,7 @@ export default function Users() {
 						key={user.id}
 						className="flex gap-4 p-4 border rounded">
 						{/* Vi använder ett enkelt formulär per rad för att undvika lokal state */}
+						<Dogs id={user.id} />
 						<form
 							onSubmit={(e) => {
 								e.preventDefault();
